@@ -1,4 +1,4 @@
-# GPU-enabled Anaconda3 and JupyterLab Docker Containers
+# GPU-enabled Anaconda3 and JupyterLab in Docker
 
 ## About
 
