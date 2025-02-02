@@ -127,7 +127,7 @@ Then fill out the configuration of your deployment. If working in the privileged
 
 ### Accessing Jupyter in LTFE Lab Environment
 
-To access the JupyterLab web UI of your deployed service navigate to `https://<LTFE_AI_SERVER_IP>:<YOUR_PORT>`. You should be greeted with the following screen:
+To access the JupyterLab web UI of your deployed service navigate to `http://<LTFE_AI_SERVER_IP>:<YOUR_PORT>`. You should be greeted with the following screen:
 
 ![Jupyter Access](images/jupyter-access-1.png)
 
