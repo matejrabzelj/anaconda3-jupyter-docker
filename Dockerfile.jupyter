@@ -14,18 +14,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-FROM xychelsea/anaconda3:v23.1.0
+FROM matejrabzelj/anaconda3:latest
 LABEL description="Anaconda3 Vanilla Container w/ Jupyter Notebooks"
 
-# $ docker build --network=host -t xychelsea/anaconda3:latest-jupyter -f Dockerfile.jupyter .
-# $ docker run --rm -it -d -p 8888:8888 xychelsea/anaconda3:latest-jupyter
-# $ docker push xychelsea/anaconda3:latest-jupyter
+# $ docker build --network=host -t matejrabzelj/anaconda3:latest-jupyter -f Dockerfile.jupyter .
+# $ docker run --rm -it -d -p 8888:8888 matejrabzelj/anaconda3:latest-jupyter
+# $ docker push matejrabzelj/anaconda3:latest-jupyter
 
-ARG JUPYTER_LAB_VERSION="4.0.3"
-ARG JUPYTER_HUB_VERSION="4.0.1"
-ARG JUPYTER_NB_CK_VERSION="2.3.1"
-ARG JUPYTER_IPYWIDGETS_VERSION="8.0.7"
-ARG JUPYTER_IPYKERNEL="6.24.0"
+ARG JUPYTER_LAB_VERSION="4.3.5"
+ARG JUPYTER_HUB_VERSION="5.2.1"
+ARG JUPYTER_NB_CK_VERSION="2.5.2"
+ARG JUPYTER_IPYWIDGETS_VERSION="8.1.5"
+ARG JUPYTER_IPYKERNEL="6.29.5"
 
 ENV JUPYTER_LAB_VERSION="${JUPYTER_LAB_VERSION}"
 ENV JUPYTER_NB_CK_VERSION="${JUPYTER_NB_CK_VERSION}"

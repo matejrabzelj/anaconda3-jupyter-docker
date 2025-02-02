@@ -1,0 +1,26 @@
+services:
+  anaconda-jupyter-gpu:
+    image: matejrabzelj/anaconda3:latest-gpu-jupyter
+    container_name: jupyter-notebook-gpu
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    ports:
+      # change 9999 to a port within the range assigned to your username
+      - "9999:8888"
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    volumes:
+      - anaconda3:/usr/local/anaconda3/
+
+volumes:
+  anaconda3:
+
+networks:
+  ai-students:
