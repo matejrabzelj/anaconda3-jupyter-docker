@@ -141,6 +141,8 @@ Then click on the `Logs` icon of the `Container` deployed within the `Stack`.
 
 Copy the token displayed in the container log and input it into the `Token` field in the JupyterLab web UI. Likewise, select your desired password and enter it under the `New Password` filed.
 
+![Jupyter Container Logs](images/jupyter-access-4.png)
+
 ![Jupyter Access Token and Password Entry](images/jupyter-access-5.png)
 
 ### Installing PyTorch and TensorFlow
